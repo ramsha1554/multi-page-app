@@ -12,7 +12,9 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-white border-b border-gray-200 py-4 px-6 flex justify-between items-center">
+    // fixed: now it defaults to vertical stack on mobile, and horizontal row on md screens
+    // also added a gap so the links aren't touching the logo on small screens
+    <nav className="bg-white border-b border-gray-200 py-4 px-6 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
       <div className="font-bold text-gray-900 text-base">
         Internship App
       </div>
