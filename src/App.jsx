@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
 
 // setting up BrowserRouter so routing works everywhere
 // wrapping pages in a main container with a bit of padding so it looks clean
@@ -21,6 +22,9 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+
+        {/* added footer to all pages, rendering it at the bottom */}
+        <Footer />
       </div>
     </BrowserRouter>
   )
