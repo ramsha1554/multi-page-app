@@ -7,8 +7,10 @@ export default function Contact() {
   }
 
   return (
-    <div className="py-6">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Me</h2>
+    <div className="py-8 max-w-2xl">
+      <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">
+        Contact Me
+      </h2>
       <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
